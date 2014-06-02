@@ -1,0 +1,414 @@
+reviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R62</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">ARTLENBURG</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21380</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.36384</Latitude>
+                        <Longitude>10.47601</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>80691994</LinkID>
+                        <Side_of_Street>L</Side_of_Street>
+                        <Percent_from_RefNode>55</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>42.15999984741211</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB3MZJfKXHwAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R63</NextWayPoint>
+               <PreviousWayPoint>R61</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R63</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">BRIETLINGEN</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21382</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.33641</Latitude>
+                        <Longitude>10.4509</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>586490533</LinkID>
+                        <Side_of_Street>R</Side_of_Street>
+                        <Percent_from_RefNode>8</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>15.770000457763672</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB26HJe2ZDQAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R64</NextWayPoint>
+               <PreviousWayPoint>R62</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R64</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+
+						
+						reviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R62</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">ARTLENBURG</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21380</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.36384</Latitude>
+                        <Longitude>10.47601</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>80691994</LinkID>
+                        <Side_of_Street>L</Side_of_Street>
+                        <Percent_from_RefNode>55</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>42.15999984741211</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB3MZJfKXHwAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R63</NextWayPoint>
+               <PreviousWayPoint>R61</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R63</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">BRIETLINGEN</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21382</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.33641</Latitude>
+                        <Longitude>10.4509</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>586490533</LinkID>
+                        <Side_of_Street>R</Side_of_Street>
+                        <Percent_from_RefNode>8</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>15.770000457763672</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB26HJe2ZDQAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R64</NextWayPoint>
+               <PreviousWayPoint>R62</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R64</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+
+						
+						
+						
+						
+						reviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R62</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">ARTLENBURG</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21380</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.36384</Latitude>
+                        <Longitude>10.47601</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>80691994</LinkID>
+                        <Side_of_Street>L</Side_of_Street>
+                        <Percent_from_RefNode>55</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>42.15999984741211</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB3MZJfKXHwAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R63</NextWayPoint>
+               <PreviousWayPoint>R61</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R63</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">BRIETLINGEN</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21382</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.33641</Latitude>
+                        <Longitude>10.4509</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>586490533</LinkID>
+                        <Side_of_Street>R</Side_of_Street>
+                        <Percent_from_RefNode>8</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>15.770000457763672</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB26HJe2ZDQAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R64</NextWayPoint>
+               <PreviousWayPoint>R62</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R64</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+
+						
+						
+						reviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R62</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">ARTLENBURG</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21380</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.36384</Latitude>
+                        <Longitude>10.47601</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>80691994</LinkID>
+                        <Side_of_Street>L</Side_of_Street>
+                        <Percent_from_RefNode>55</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>42.15999984741211</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB3MZJfKXHwAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R63</NextWayPoint>
+               <PreviousWayPoint>R61</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R63</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
+                           <ParsedStreetAddress>
+                              <ParsedStreetName>
+                                 <StreetName Language_Code="GER">B209</StreetName>
+                              </ParsedStreetName>
+                           </ParsedStreetAddress>
+                           <ParsedPlace>
+                              <PlaceLevel2 Language_Code="GER">NIEDERSACHSEN</PlaceLevel2>
+                              <PlaceLevel3 Language_Code="GER">LÜNEBURG</PlaceLevel3>
+                              <PlaceLevel4 Language_Code="GER">BRIETLINGEN</PlaceLevel4>
+                           </ParsedPlace>
+                           <PostalCode>
+                              <NT_Postal>21382</NT_Postal>
+                           </PostalCode>
+                           <CountryCode>DEU</CountryCode>
+                        </ParsedAddress>
+                     </Address>
+                     <GeoPosition>
+                        <Latitude>53.33641</Latitude>
+                        <Longitude>10.4509</Longitude>
+                     </GeoPosition>
+                     <MapLinkID>
+                        <LinkID>586490533</LinkID>
+                        <Side_of_Street>R</Side_of_Street>
+                        <Percent_from_RefNode>8</Percent_from_RefNode>
+                     </MapLinkID>
+                     <Confidence>
+                        <Match_Level>GeoPoint</Match_Level>
+                     </Confidence>
+                     <CompassHeading>15.770000457763672</CompassHeading>
+                     <DrivingDirection>01</DrivingDirection>
+                     <FunctionalClass>2</FunctionalClass>
+                     <FormOfWay>3</FormOfWay>
+                     <RoadDescriptor>B209</RoadDescriptor>
+                     <AgoraCString>DBEBBADoB26HJe2ZDQAEAwQCAwUDBwZCMjA5AAMQAQA=</AgoraCString>
+                  </Location>
+               </Locations>
+               <NextWayPoint>R64</NextWayPoint>
+               <PreviousWayPoint>R62</PreviousWayPoint>
+               <Importance>always</Importance>
+            </WayPoint>
+            <WayPoint>
+               <Id>R64</Id>
+               <Locations>
+                  <Location>
+                     <Address>
+                        <ParsedAddress>
