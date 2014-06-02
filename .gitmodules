@@ -1,0 +1,3 @@
+[submodule "ext/jstd"]
+	path = ext/jstd
+	url = http://github.com/Jopie64/jstd.git
