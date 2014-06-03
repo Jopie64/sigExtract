@@ -1,6 +1,7 @@
 reviousWayPoint>
                <Importance>always</Importance>
             </WayPoint>
+			@ABC Hier is een .hex.txt file @DEF
             <WayPoint>
                <Id>R62</Id>
                <Locations>
@@ -314,6 +315,8 @@ reviousWayPoint>
 						reviousWayPoint>
                <Importance>always</Importance>
             </WayPoint>
+			
+		*BEGIN*Hallo wereld 1!*END*
             <WayPoint>
                <Id>R62</Id>
                <Locations>
@@ -332,6 +335,7 @@ reviousWayPoint>
                            </ParsedPlace>
                            <PostalCode>
                               <NT_Postal>21380</NT_Postal>
+		*BEGIN*Hallo wereld 2!*END*
                            </PostalCode>
                            <CountryCode>DEU</CountryCode>
                         </ParsedAddress>
@@ -360,7 +364,9 @@ reviousWayPoint>
                <PreviousWayPoint>R61</PreviousWayPoint>
                <Importance>always</Importance>
             </WayPoint>
+		*BEGIN*Hallo wereld 3!
             <WayPoint>
+			*END*@ABC Hier is nog een .hex.txt file @DEF
                <Id>R63</Id>
                <Locations>
                   <Location>

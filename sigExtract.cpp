@@ -17,7 +17,7 @@ typedef ostream::off_type off_type;
 
 struct Signature
 {
-	Signature() :next(0), maxBytes(0) {}
+	Signature() :next(-2), maxBytes(0) {}
 	string header;
 	string footer;
 	size_t maxBytes;
@@ -82,10 +82,14 @@ pos_type findInStream(istream& s, const std::string& str)
 		std::streamsize readCnt = s.gcount();
 		if (readCnt == 0)
 			return -1;
+		bool isAtEnd = readCnt != readBuf.size();
 		readBuf.resize(readCnt);
 		string::size_type found = readBuf.find(str);
 		if (found != string::npos)
 			return currPos + (pos_type)found;
+
+		if (isAtEnd)
+			return -1;
 
 		s.seekg(s.tellg() - (pos_type)str.size());
 	}
@@ -118,7 +122,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			{
 				if (i.next == (pos_type) -1)
 					continue; //Not found anymore... skip it.
-				if (!i.next)
+				if (!i.next == -2 || i.next < currPos)
 				{
 					in.seekg(currPos);
 					i.next = findInStream(in, i.header);
@@ -131,7 +135,7 @@ int _tmain(int argc, _TCHAR* argv[])
 					useSig = &i;
 				}
 			}
-			if (lowestPos < 0 || !useSig)
+			if (lowestPos == -1 || !useSig)
 				break; //All done.
 			in.seekg(lowestPos + (pos_type)useSig->header.size());
 			pos_type footerPos = findInStream(in, useSig->footer);
@@ -147,7 +151,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			buf.resize(in.gcount());
 			out.write(&buf[0], buf.size());
 			currPos = in.tellg();
-			useSig->next = 0;
+			useSig->next = -2; //Reset
 		}
 	}
 	catch (std::exception& e)
