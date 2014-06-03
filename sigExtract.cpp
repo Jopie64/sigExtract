@@ -117,6 +117,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		if (!in)
 			throw std::runtime_error("Cannot open input file.");
 		pos_type currPos = 0;
+		size_t fileCount = 0;
 		while (true)
 		{
 			off_type lowestPos = -1;
@@ -145,7 +146,13 @@ int _tmain(int argc, _TCHAR* argv[])
 			size_t outFileSize = footerPos >= 0 ? size_t(footerPos + (pos_type)useSig->footer.size() - useSig->next) : 10000000;
 			if (outFileSize > useSig->maxBytes && useSig->maxBytes != 0)
 				outFileSize = useSig->maxBytes;
-			wstring outFileName = JStd::String::Format(L"%s\\%010I64d.%s", outDir.c_str(), (long long) useSig->next, String::ToWide(useSig->ext.c_str(), CP_ACP).c_str());
+			size_t oldDirNr = fileCount / 1000;
+			++fileCount;
+			size_t newDirNr = fileCount / 1000;
+			wstring outDirWithNum = String::Format(L"%s\\%04Id", outDir.c_str(), newDirNr);
+			if (oldDirNr != newDirNr || fileCount == 1)
+				CreateDirectory(outDirWithNum.c_str(), NULL);
+			wstring outFileName = JStd::String::Format(L"%s\\%010I64d.%s", outDirWithNum.c_str(), (long long) useSig->next, String::ToWide(useSig->ext.c_str(), CP_ACP).c_str());
 			ofstream out(outFileName.c_str(), ios::binary | ios::out);
 			in.seekg(useSig->next);
 			std::string buf;
