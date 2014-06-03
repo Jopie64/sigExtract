@@ -72,7 +72,7 @@ void ReadSignature(vector<Signature>& dest, const wstring& src)
 pos_type findInStream(istream& s, const std::string& str)
 {
 	static string readBuf;
-	readBuf.reserve(65535);
+	readBuf.reserve(4096);
 	while (true)
 	{
 		readBuf.resize(readBuf.capacity());
