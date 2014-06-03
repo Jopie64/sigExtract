@@ -104,6 +104,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		wstring sigFileName	= cmdLine.next(L's', L"signature");
 		wstring outDir		= cmdLine.next(L'o', L"output");
 		wstring inFileName	= cmdLine.next(L'i', L"input");
+		bool    verbose		= cmdLine.hasOption(L'v', L"verbose");
 
 		if (sigFileName.empty()) throw std::runtime_error("Missing signature file name (supply with -s)");
 		if (inFileName.empty()) throw std::runtime_error("Missing input file name (supply with -i)");
@@ -113,6 +114,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		ReadSignature(vSig, sigFileName);
 
 		ifstream in(inFileName, ios::binary | ios::in);
+		if (!in)
+			throw std::runtime_error("Cannot open input file.");
 		pos_type currPos = 0;
 		while (true)
 		{
@@ -149,6 +152,8 @@ int _tmain(int argc, _TCHAR* argv[])
 			buf.resize(outFileSize);
 			in.read(&buf[0], buf.size());
 			buf.resize(in.gcount());
+			if (verbose)
+				cout << String::ToMult(outFileName, CP_ACP) << " " << buf.size() << " bytes" << endl;
 			out.write(&buf[0], buf.size());
 			currPos = in.tellg();
 			useSig->next = -2; //Reset
@@ -156,7 +161,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	catch (std::exception& e)
 	{
-		cout << e.what() << endl;
+		cout << "Error: " << e.what() << endl
+			<< "Usage: sigExtract -s <signature file> -i <input file> -o <output directory> [-v]" << endl
+			<< endl
+			<< "Consult the readme file for more info." << endl;
 	}
 #ifdef _DEBUG
 	char c;

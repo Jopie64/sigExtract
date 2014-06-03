@@ -1,7 +1,9 @@
  sigExtract.exe extracts data from an image file based on a signature file
  Copyright (C) 2014  Johan 't Hart (Made for Digirec Data Recovery)
 
-Usage: sigExtract -s <signature file> -i <input file> -o <output directory>
+Usage: sigExtract -s <signature file> -i <input file> -o <output directory> [-v]
+
+Use -v (verbose) to show the file names it is extracting
 
 The signature file is a tab-separated file which currently enforces the
 following format:
