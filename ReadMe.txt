@@ -1,40 +1,36 @@
-========================================================================
-    CONSOLE APPLICATION : sigExtract Project Overview
-========================================================================
+ sigExtract.exe extracts data from an image file based on a signature file
+ Copyright (C) 2014  Johan 't Hart (Made for Digirec Data Recovery)
 
-AppWizard has created this sigExtract application for you.
+Usage: sigExtract -s <signature file> -i <input file> -o <output directory>
 
-This file contains a summary of what you will find in each of the files that
-make up your sigExtract application.
+The signature file is a tab-separated file which currently enforces the
+following format:
+
+-----
+type	header	footer	maxBytes	extension
+txt	<WayPoint>	</WayPoint>	65535	xml
+txt	*BEGIN*	*END*	65535	txt
+hex	40 41 42 43	40 44 45 46	65535	hex.txt
+-----
+
+The header is ignored. Every row not beginning with txt or hex is ignored.
+Columns must be in this order.
+
+type:      Format of the header and footer
+		     txt: in plain text
+		     hex: Hex codes like 41 for A, 42 for B etc
+header:    Start of a section to extract
+footer:    End of a section to extract
+maxBytes:  Stop when section is greater then these number of bytes
+extension: Extension given to a file with this header/footer
 
 
-sigExtract.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation.
 
-sigExtract.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-sigExtract.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named sigExtract.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+	http://www.gnu.org/licenses/
