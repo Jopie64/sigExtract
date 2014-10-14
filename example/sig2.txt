@@ -1,0 +1,2 @@
+type	header	footer	maxBytes	extension
+txt	<WayPoint>		65535	xml

@@ -15,8 +15,8 @@ txt	*BEGIN*	*END*	65535	txt
 hex	40 41 42 43	40 44 45 46	65535	hex.txt
 -----
 
-The header is ignored. Every row not beginning with txt or hex is ignored.
-Columns must be in this order.
+The header of this file (with the column names) is ignored. Every row not
+beginning with txt or hex is ignored. Columns must be in this order.
 
 type:      Format of the header and footer
 		     txt: in plain text
@@ -25,6 +25,8 @@ header:    Start of a section to extract
 footer:    End of a section to extract
 maxBytes:  Stop when section is greater then these number of bytes
 extension: Extension given to a file with this header/footer
+
+When the footer is empty, the header is treated as separator.
 
 
     This program is free software: you can redistribute it and/or modify

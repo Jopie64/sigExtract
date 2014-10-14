@@ -17,13 +17,14 @@ typedef ostream::off_type off_type;
 
 struct Signature
 {
-	Signature() :next(-2), maxBytes(0) {}
+	Signature() :next(-2), maxBytes(0), headerIsSeparator(false){}
 	string header;
 	string footer;
 	size_t maxBytes;
 	string ext;
+	bool   headerIsSeparator;
 
-	pos_type next;
+	fpos_t next;
 };
 
 void HexToString(string& s)
@@ -63,8 +64,13 @@ void ReadSignature(vector<Signature>& dest, const wstring& src)
 		getline(sLine, maxSize, '\t');
 		sig.maxBytes = atol(maxSize.c_str());
 		getline(sLine, sig.ext, '\t');
-		if (sig.header.empty() || sig.footer.empty())
+		if (sig.header.empty())
 			continue;
+		if (sig.footer.empty())
+		{
+			sig.footer = sig.header;
+			sig.headerIsSeparator = true;
+		}
 		dest.push_back(sig);
 	}
 }
@@ -116,7 +122,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		ifstream in(inFileName, ios::binary | ios::in);
 		if (!in)
 			throw std::runtime_error("Cannot open input file.");
-		pos_type currPos = 0;
+		fpos_t currPos = 0;
 		size_t fileCount = 0;
 		while (true)
 		{
@@ -124,14 +130,14 @@ int _tmain(int argc, _TCHAR* argv[])
 			Signature* useSig = nullptr;
 			for (auto &i : vSig)
 			{
-				if (i.next == (pos_type) -1)
+				if (i.next == -1)
 					continue; //Not found anymore... skip it.
-				if (!i.next == -2 || i.next < currPos)
+				if (i.next == -2 || i.next < currPos)
 				{
 					in.seekg(currPos);
 					i.next = findInStream(in, i.header);
 				}
-				if (i.next == (pos_type) -1)
+				if (i.next == -1)
 					continue; //Not found anymore... skip it.
 				if (lowestPos < 0 || i.next < lowestPos)
 				{
@@ -141,9 +147,22 @@ int _tmain(int argc, _TCHAR* argv[])
 			}
 			if (lowestPos == -1 || !useSig)
 				break; //All done.
-			in.seekg(lowestPos + (pos_type)useSig->header.size());
-			pos_type footerPos = findInStream(in, useSig->footer);
-			size_t outFileSize = footerPos >= 0 ? size_t(footerPos + (pos_type)useSig->footer.size() - useSig->next) : 10000000;
+			in.seekg(lowestPos + useSig->header.size());
+			fpos_t footerPos = findInStream(in, useSig->footer);
+			fpos_t outFileSize;
+			if (useSig->headerIsSeparator)
+			{
+				if (footerPos >= 0)
+					outFileSize = footerPos - useSig->next;
+				else
+				{
+					//Until file end
+					in.seekg(0, ios::end);
+					outFileSize = in.tellg() - useSig->next;
+				}
+			}
+			else
+				outFileSize = footerPos >= 0 ? footerPos + useSig->footer.size() - useSig->next : 10000000;
 			if (outFileSize > useSig->maxBytes && useSig->maxBytes != 0)
 				outFileSize = useSig->maxBytes;
 			size_t oldDirNr = fileCount / 1000;
@@ -163,6 +182,8 @@ int _tmain(int argc, _TCHAR* argv[])
 				cout << String::ToMult(outFileName, CP_ACP) << " " << buf.size() << " bytes" << endl;
 			out.write(&buf[0], buf.size());
 			currPos = in.tellg();
+			if (useSig->headerIsSeparator)
+				currPos -= useSig->header.size();
 			useSig->next = -2; //Reset
 		}
 	}
